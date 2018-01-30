@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using QuickMeal.Library.DataAccess;
 
 namespace QuickMeal.UI
 {
@@ -30,6 +31,8 @@ namespace QuickMeal.UI
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            DataAccessBase.InitializeDatabase();
         }
 
         /// <summary>
